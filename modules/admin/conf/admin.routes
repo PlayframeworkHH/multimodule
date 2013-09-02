@@ -1,0 +1,2 @@
+GET       /             controllers.AdminController.index
+GET       /hey          controllers.AdminController.hey
