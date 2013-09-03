@@ -1,1 +1,1 @@
-GET     /        controllers.WebController.index
+GET     /        controllers.web.WebController.index

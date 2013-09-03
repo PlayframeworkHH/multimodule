@@ -19,5 +19,9 @@ In https://github.com/FortyTwoEng/multiproject, nearly the same
 test works in subprojects, but the subprojects have their own
 application.conf there, maybe that is the difference.
 
+Other possible problems:
+- in a subproject that is not a Play project, you have to set the scala version
+  explicitly in the Build file
+
 Documentation about subprojects:
 http://www.playframework.com/documentation/2.1.2/SBTSubProjects

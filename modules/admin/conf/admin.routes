@@ -1,2 +1,2 @@
-GET       /             controllers.AdminController.index
-GET       /hey          controllers.AdminController.hey
+GET       /             controllers.admin.AdminController.index
+GET       /hey          controllers.admin.AdminController.hey
