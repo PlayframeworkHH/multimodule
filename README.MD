@@ -14,14 +14,14 @@ than without subprojects.
 When using "sbt run" in the main project, there is no real drawback of using subprojects.
 All changes are picked up immediately, even changes in sub projects.
 
-The test in the admin subproject does not work yet.
-In https://github.com/FortyTwoEng/multiproject, nearly the same
-test works in subprojects, but the subprojects have their own
-application.conf there, maybe that is the difference.
-
-Other possible problems:
-- in a subproject that is not a Play project, you have to set the scala version
+Things to be aware of:
+- In a subproject that is not a Play project, you have to set the scala version
   explicitly in the Build file
+- The variable name of the main project in the build file must be the first
+  in the alphabet
+- For FakeApplication to work in a subproject, you have to create an
+  own application.conf for the subproject and give the FakeApplication the
+  path to the subproject. See admin subproject.
 
 Documentation about subprojects:
 http://www.playframework.com/documentation/2.1.2/SBTSubProjects

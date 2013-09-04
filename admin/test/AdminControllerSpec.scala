@@ -7,12 +7,13 @@ import java.io.File
 
 class AdminControllerSpec extends Specification {
   
-  val path = new File("./modules/admin")
+  val path = new File("admin")
   
   "AdminController" should {
     
     "render the index page" in {
-      running(FakeApplication()) {
+      val app = FakeApplication(path)
+      running(app) {
         val home = route(FakeRequest(GET, "/")).get
         
         status(home) must equalTo(OK)
