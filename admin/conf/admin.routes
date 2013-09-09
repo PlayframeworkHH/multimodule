@@ -1,2 +1,3 @@
 GET       /             controllers.admin.AdminController.index
 GET       /hey          controllers.admin.AdminController.hey
+GET       /mailtest     controllers.admin.AdminController.mailTest
